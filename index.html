@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini TikTok</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <video id="videoPlayer" autoplay loop controls>
+    <source src="videos/video1.mp4" type="video/mp4">
+  </video>
+
+  <div class="buttons">
+
+    <button onclick="curtir()">
+      Curtir
+      <span id="likes">0</span>
+    </button>
+
+    <button onclick="comentar()">
+      Comentar
+    </button>
+
+    <button onclick="compartilhar()">
+      Compartilhar
+    </button>
+
+    <button onclick="proximoVideo()">
+      Próximo
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
